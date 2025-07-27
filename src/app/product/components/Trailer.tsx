@@ -47,9 +47,9 @@ const Trailer = ({media, name, checklist} : TrailerCTAChecklistProps) => {
           >
             <Play size={20}></Play>
           </button>
-           <CTA name={name}></CTA>
+           <CTA name={name} media={media} checklist={checklist}></CTA>
         </div>
-         <CheckList checklist={checklist}></CheckList>
+         <CheckList name={name} checklist={checklist} media={media}></CheckList>
       </div>
       <div className='flex justify-between mt-3 p-1'>
         <p className='text-xs text-gray-400'>কোর্সটি সম্পর্কে বিস্তারিত জানতে</p>
