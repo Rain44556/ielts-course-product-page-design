@@ -1,4 +1,5 @@
 import { Menu, Search, Phone } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
     return (
@@ -6,10 +7,12 @@ const Navbar = () => {
   
       <div className="flex items-center gap-2">
         <Menu className="w-6 h-6" />
-        <img
+        <Image
           src="/logo.png"
           alt="10 Minute School"
           className="h-6 sm:h-8"
+          width={30}
+          height={30}
         />
       </div>
 
