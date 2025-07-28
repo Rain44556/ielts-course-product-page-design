@@ -58,7 +58,7 @@ export type Data ={
 
 
 export type LangProps = {
-  searchParams: { lang?: string }
+  searchParams: { lang: string }
 }
 
 export type DescriptionTitleProps = {
