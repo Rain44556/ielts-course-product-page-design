@@ -7,14 +7,18 @@ import CourseLayOut from './components/CourseLayOut';
 import LearnFromCourse from './components/LearnFromCourse';
 import ExclusiveCourseFeature from './components/ExclusiveCourseFeature';
 import CourseDetails from './components/CourseDetails';
+import { LangProps } from '@/lib/types';
 
-const ProductPage = async () => {
-    const product = await getProductData();
+const ProductPage = async ({searchParams}: LangProps) => {
+  const lang = searchParams.lang === 'en' ? 'en' : 'bn';
+  const product = await getProductData(lang);
+
+
     const instructorSec = product.data.sections.find((ins: { type: string; }) => ins.type === 'instructors')
     const featuresSec = product.data.sections.find((feat: { type: string; }) => feat.type === 'features')
     const pointersSec = product.data.sections.find((point: { type: string; }) => point.type === 'pointers')
     const exclusiveFeatureSec= product.data.sections.find((exclusive: { type: string; }) => exclusive.type === 'feature_explanations')
-       const courseDetailsSec= product.data.sections.find((exclusive: { type: string; }) => exclusive.type === 'about')
+    const courseDetailsSec= product.data.sections.find((exclusive: { type: string; }) => exclusive.type === 'about')
 
 
     return (

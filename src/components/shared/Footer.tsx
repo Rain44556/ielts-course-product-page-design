@@ -5,36 +5,36 @@ import googlePlayLogo from '@/assets/googlePlay.png'
 
 const Footer = () => {
     return (
-           <div className="bg-white border-t text-gray-800">
+           <div className=" text-gray-800 px-3">
       <div className="max-w-6xl mx-auto px-4 py-10">
       
         <div className="flex flex-col items-center space-y-4">
           <h1 className="text-2xl font-bold">
             <span className="text-red-600">10</span> MINUTE SCHOOL
           </h1>
-          <p className="text-lg font-semibold text-center">
+          <p className="text-sm font-semibold text-center">
             ডাউনলোড করুন আমাদের মোবাইল অ্যাপ
           </p>
-          <div className="flex gap-4 mt-2">
+          <div className="grid grid-cols-2 gap-4 mt-2">
             <a
               href="#"
-              className="bg-black rounded-md overflow-hidden flex items-center px-4 py-2 text-white"
+              className="bg-black rounded-md overflow-hidden flex items-center px-2 py-2 text-gray-200 w-4/5"
             >
-                <Image className=" mr-5" src={googlePlayLogo} alt="googlePlayLogo" width={50} height={50}></Image>
+                <Image className=" mr-5 w-8 h-8 object-cover" src={googlePlayLogo} alt="googlePlayLogo" width={50} height={50}></Image>
               <span>Get it on<br />Google Play</span>
             </a>
             <a
               href="#"
-              className="bg-black rounded-md overflow-hidden flex items-center px-4 py-2 text-white"
+              className="bg-black rounded-md overflow-hidden flex items-center px-2 py-2 text-gray-200 w-4/5"
             >
-               <Image className="bg-white mr-5" src={appleLogo} alt="appleLogo" width={50} height={50}></Image>
-              <span>Download on<br />App Store</span>
+               <Image className="bg-white mr-5 w-8 h-8 object-cover" src={appleLogo} alt="appleLogo" width={50} height={50}></Image>
+              <span className="">Download on the App Store</span>
             </a>
           </div>
         </div>
 
      
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 mt-10 text-center sm:text-left">
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-10 mt-10 text-left">
           <div>
             <h3 className="font-bold mb-4">কোম্পানি</h3>
             <ul className="space-y-2 text-sm">

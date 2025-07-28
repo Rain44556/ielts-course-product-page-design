@@ -1,6 +1,6 @@
 
-export const getProductData = async() =>{
-    const apiUrl = 'https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course?lang=bn'
+export const getProductData = async(lang: 'en' | 'bn' = 'bn') =>{
+    const apiUrl = `https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course?lang=${lang}`
     const res = await fetch (apiUrl,{
     headers: {
     'X-TENMS-SOURCE-PLATFORM': 'web',

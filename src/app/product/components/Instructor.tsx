@@ -5,7 +5,7 @@ import React from 'react';
 const Instructor = ({title,instructors} : InstructorSectionProps) => {
     
     return (
-        <div className='my-10'>
+        <div className='lg:my-10 px-5 lg:px-0'>
            <h1 className='py-5 font-semibold text-gray-800 text-xl'>{title}</h1>
            <div className="border border-gray-300">
           {instructors.map((instructor) => (

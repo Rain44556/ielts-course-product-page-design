@@ -4,7 +4,7 @@ import { ChevronUp, ChevronDown } from "lucide-react";
 import React, { useState } from "react";
 
 const CourseDetails = ({ title, details }: CourseDetailsProps) => {
-  const [open, setOpen] = useState<number | null>(0);
+const [open, setOpen] = useState<number | null>(0);
 
   const toggleAccordion = (idx: number) => {
     setOpen((prev) => (prev === idx ? null : idx));
@@ -12,7 +12,7 @@ const CourseDetails = ({ title, details }: CourseDetailsProps) => {
 
 
   return (
-    <div className="my-10">
+    <div className="my-10 px-5 lg:px-0">
       <h2 className="py-5 font-semibold text-gray-800 text-xl">{title}</h2>
       <div className="border border-gray-300 rounded-lg p-4">
         {details.map((detail, id) => (

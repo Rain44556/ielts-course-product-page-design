@@ -4,11 +4,11 @@ import React from 'react';
 
 const CourseLayOut = ({title, features} : FeatureProps) => {
     return (
-         <div className="my-10">
+         <div className="my-10 px-5 lg:px-0">
       <div className="container">
         <h2 className="py-5 font-semibold text-gray-800 text-xl">{title}</h2>
 
-        <div className="grid grid-cols-2 gap-2 p-5 rounded-lg bg-gray-800 text-gray-100">
+        <div className="grid lg:grid-cols-2 gap-2 p-5 rounded-lg bg-gray-800 text-gray-100">
           {features.map((feature) => (
             <div
               key={feature.id}

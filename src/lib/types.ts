@@ -44,7 +44,7 @@ type CourseDetails = {
   title: string
   description: string
 }
-
+   
 
 export type Data ={
   slug: string;
@@ -56,6 +56,10 @@ export type Data ={
   instructors: Instructor[];
 }
 
+
+export type LangProps = {
+  searchParams: { lang?: string }
+}
 
 export type DescriptionTitleProps = {
    title: string;
