@@ -4,7 +4,7 @@
   resource_value: string
   thumbnail_url: string 
 }
- type ChecklistItem = {
+ type Checklist = {
   color: string;
   icon: string;
   id: string;
@@ -30,7 +30,21 @@ type Pointers ={
   color: string;
   icon: string;
   text: string;
+};
+
+type ExclusiveFeature = {
+  title: string;
+  checklist: string[];
+  file_url: string;
+  file_type: string;
+};
+
+type CourseDetails = {
+  id: string 
+  title: string
+  description: string
 }
+
 
 export type Data ={
   slug: string;
@@ -38,7 +52,7 @@ export type Data ={
   title: string;
   description: string;
   media: Medium[];
-  checklist: ChecklistItem[];
+  checklist: Checklist[];
   instructors: Instructor[];
 }
 
@@ -50,7 +64,7 @@ export type DescriptionTitleProps = {
 export type TrailerCTAChecklistProps = {
    media: Medium[];
     name: string;
-    checklist: ChecklistItem[];
+    checklist: Checklist[];
 };
 export type InstructorSectionProps = {
   title: string;
@@ -64,3 +78,12 @@ export type PointersProps ={
   title: string;
   pointers: Pointers[];
 }
+export type ExclusiveFeatureProps = {
+  title: string;
+  features: ExclusiveFeature[];
+};
+
+export type CourseDetailsProps = {
+  title: string;
+  details: CourseDetails[];
+};

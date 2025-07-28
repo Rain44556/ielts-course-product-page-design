@@ -5,13 +5,13 @@ import React from 'react';
 const Instructor = ({title,instructors} : InstructorSectionProps) => {
     
     return (
-        <div>
+        <div className='my-10'>
            <h1 className='py-5 font-semibold text-gray-800 text-xl'>{title}</h1>
            <div className="border border-gray-300">
           {instructors.map((instructor) => (
             <div
               key={instructor.slug}
-              className="bg-gray-50 rounded-2xl shadow-md p-6 flex gap-10 items-center"
+              className="bg-gray-50 shadow-md p-6 flex gap-10 items-center"
             >
               <Image
                 src={instructor.image}

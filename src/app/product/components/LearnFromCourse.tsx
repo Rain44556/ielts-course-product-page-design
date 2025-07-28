@@ -4,7 +4,7 @@ import React from 'react';
 
 const LearnFromCourse = ({title, pointers} :PointersProps) => {
     return (
-        <div className="mt-10">
+        <div className="my-10">
       <div className="max-w-5xl mx-auto">
         <h2 className="py-5 font-semibold text-gray-800 text-xl">{title}</h2>
         <div className="grid grid-cols-2 gap-6 border border-gray-300 p-6 rounded-md">
