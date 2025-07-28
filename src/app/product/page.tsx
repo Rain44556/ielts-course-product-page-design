@@ -10,7 +10,7 @@ import CourseDetails from './components/CourseDetails';
 import { LangProps } from '@/lib/types';
 
 const ProductPage = async ({searchParams}: LangProps) => {
-  const lang = searchParams.lang === 'en' ? 'en' : 'bn';
+  const lang = searchParams?.lang === 'en' ? 'en' : 'bn';
   const product = await getProductData(lang);
 
 
