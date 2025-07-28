@@ -58,8 +58,10 @@ export type Data ={
 
 
 export type LangProps = {
-  searchParams: { lang: string }
-}
+  searchParams: {
+    lang?: string;
+  };
+};
 
 export type DescriptionTitleProps = {
    title: string;
@@ -86,7 +88,6 @@ export type ExclusiveFeatureProps = {
   title: string;
   features: ExclusiveFeature[];
 };
-
 export type CourseDetailsProps = {
   title: string;
   details: CourseDetails[];
